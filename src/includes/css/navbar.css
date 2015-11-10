@@ -1,0 +1,63 @@
+/******************************/
+/********* NAVIGATION *********/
+/******************************/
+.navbar{
+	width: 100%;
+	background-color: transparent;
+	
+	z-index: 10;
+	border-bottom: 1px solid #fff;
+}
+.nav-content{
+	width: 100%;
+	max-width: 1120px;
+	margin: 0 auto;
+	
+}
+/* Displays site navigation */
+.nav-left{
+	float: left;
+	padding: 6px 5px;
+}
+/* Login, Logout, edit profile etc */
+.nav-right{
+	float: right;
+	padding: 6px 5px;
+}
+.nav-list *{
+	list-style: none;
+}
+.nav-list li{
+	position: relative;
+	float:left;
+	padding: 6px 5px;
+}
+.nav-list li a{
+	display: block;
+	width:100%;
+	height: 100%;
+	padding: 6px 5px;
+	color: #FFF;
+	text-align: center;
+	cursor: pointer;
+	/* border: 1px solid transparent; */
+	/* border-radius: 1em; */
+	/* transition: color 0.5s ease; */
+}
+.nav-list-dropdown li a{
+	text-align: left;
+	color: #A1A5A9;
+}
+/* Hover Style */
+.nav-list a:hover{
+	/* border-color: #FFF; */
+	color: #4f5355; 
+}
+
+/* Dropdown list style */
+.nav-list-dropdown{
+	position: absolute;
+	display:none;
+	background-color: #FFF;
+	z-index: 10;
+}

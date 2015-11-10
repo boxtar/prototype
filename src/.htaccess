@@ -1,0 +1,31 @@
+ErrorDocument 404 /includes/err_handlers/404.php
+ErrorDocument 403 /includes/err_handlers/403.php
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^user/([a-zA-Z0-9_.-]{4,100})$ profile.php?user=$1&type=user [QSA,NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^music/([a-zA-Z0-9_.-]{4,100})$ profile.php?user=$1&type=music [QSA,NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^dance/([a-zA-Z0-9_.-]{4,100})$ profile.php?user=$1&type=dance [QSA,NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^comedy/([a-zA-Z0-9_.-]{4,100})$ profile.php?user=$1&type=comedy [QSA,NC,L]
+
+RewriteRule ^music/$ music.php [QSA,NC,L]
+</IfModule>
+
+
+

@@ -1,0 +1,225 @@
+#profile-content-wrap{
+	position: relative;
+	width: 100%;
+}
+
+.prof-cont-right{
+	float: right;
+}
+#avatar{
+	/* background-color: #4CFF4C; */
+	background-size: cover;
+	background-position: center center;
+}
+#basic-info{
+	/* background-color: #4C79FF; */
+	padding-left: 1%;
+}
+#mibox{
+	background-color: #D900A3;
+}
+#prof-main-content-wrap{
+	float: right;
+	width:70%;
+	min-height: 500px;
+	background-color: #FF4C4C;
+}
+#prof-blog-content{
+	float: right;
+	margin-right: 1%;
+	width:29%;
+	background-color: #E9E9E9;
+}
+#music-section{
+	min-height:250px; /*common feature*/
+	background-color: #FF9673;
+}
+#video-section{
+	min-height:250px; /*common feature*/
+	background-color: #4CFF79;
+}
+#image-gallery-section{
+	min-height:250px; /*common feature*/
+	background-color: #FF99FF;
+}
+.blog-entry{
+	min-height: 125px;
+}
+
+/****************** POSTS *******************/
+.post-submit-wrapper{
+	width: auto;
+	height: auto;
+	/*margin: 10px 5px 0px;*/
+	border: 1px solid #E1E1E1;
+	overflow: hidden;
+}
+.post-submit-wrapper:hover, .post-submit-wrapper:focus{
+	border: 1px solid #3366CC;
+}
+.post-submit-img-wrapper{
+	width: 5%;
+	float: left;
+}
+.post-submit-img-wrapper img.post-submit-img{
+	width: 100%; height: auto;
+	border-right: 1px solid #E1E1E1;
+	float: left; /* Gets rid of annoying little gap at bottom of img */
+}
+.post-submit-wrapper .post-submit-header-wrapper{
+	width: auto;
+	overflow:hidden;
+	height: auto;
+	background-color: #F2F2F2;
+	border-bottom: 1px solid #E1E1E1;
+	cursor: default;
+}
+.post-submit-header-wrapper .post-submit-header-caption{
+	width: 50%;
+	float: left;
+	padding-left: 5px;
+	color: #3366CC;
+	line-height: 1.5
+}
+.post-submit-header-wrapper .post-submit-header-button-wrapper{
+	width: 50%;
+	float: left;
+	position: relative
+}
+.post-submit-header-button-wrapper .post-submit-header-button{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 65px;
+	height: 30px;
+	background: #3366CC;
+	color: #FFF;
+	border-left: 1px solid #E1E1E1;
+	font-size: 14px;
+	line-height: 2;
+}
+.post-submit-header-button-wrapper .post-submit-header-button:hover{
+	background: #1346AC;
+	cursor: pointer;
+}
+.post-submit-wrapper .post-submit-content-wrapper{
+	float: left;
+	padding-left: 5px;
+	width: 100%;
+	background-color: #FFF;
+}
+.post-submit-wrapper .post-submit-content-wrapper textarea{
+	width: 100%;
+	height: 100%;
+	resize: none;
+	border: none;
+	background-color: transparent;
+}
+.post-submit-wrapper .post-submit-content-wrapper textarea:hover, .post-submit-wrapper .post-submit-content-wrapper textarea:focus{
+	border: none;
+	box-shadow: none;
+}
+ul.posts-list{
+	list-style-type: none;
+	width: auto;
+}
+
+ul.posts-list li.post{
+	position: relative;
+	width: auto;
+	height: auto;
+	margin: 5px 0px;
+	background-color: #FFFFF5;
+	border: 1px solid #E1E1E1;
+	overflow: hidden;
+}
+
+ul.posts-list li.post:hover{
+	cursor: default;
+	border: 1px solid #3366CC;
+}
+
+ul.posts-list li.post .post-img-wrapper{
+	width: 10%;
+	float: left;
+}
+
+ul.posts-list li.post .post-img-wrapper img.post-img{
+	width: 100%; height: auto;
+	background-color: #A1A1A1;
+	border-right: 1px solid #E1E1E1;
+	float: left; /* Gets rid of annoying little gap at bottom of img */
+}
+
+ul.posts-list li.post .post-content-wrapper{
+	float: left;
+	padding-left: 2%;
+	padding-bottom: 1%;
+	width: 88%;
+}
+
+ul.posts-list li.post .post-username{
+	height: 25px;
+	line-height: 22px;
+	color: #3366CC;
+	font-size: 16px;
+}
+ul.posts-list li.post .post-content{
+	font-size: 11px;
+	color: #2d3336;
+}
+ul.posts-list li.post .post-buttons-wrapper{
+	display: none;
+	position: absolute;
+	top: 0px; right: 0px;
+	width: 40px;
+	
+}
+ul.posts-list li.post:hover .post-buttons-wrapper{
+	display: block;
+}
+ul.posts-list li.post .post-buttons-wrapper ul.post-buttons{
+	width: auto;
+	list-style-type: none;
+}
+ul.posts-list li.post .post-buttons-wrapper ul.post-buttons li.post-button{
+	width: 50%;
+	height: 20px;
+	float:right;
+	background-color: #2356BC;
+	color: #FFF;
+	border-left: 1px solid white;
+}
+ul.posts-list li.post .post-buttons-wrapper ul.post-buttons li.post-button:hover{
+	background-color: #4E81E7;
+	cursor: pointer;
+}
+
+/*******************************/
+
+@media screen and (max-width: 920px) {
+	#basic-info{
+		width: 70%;
+	}
+	#mibox{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	
+	#prof-main-content-wrap, #prof-blog-content{
+		width: 100%;
+		float: none;
+		margin: none;
+	}
+
+}
+@media screen and (max-width: 560px) {
+	#avatar{
+		width: 100%;
+	}
+	#basic-info{
+		width: 100%;
+	}
+}

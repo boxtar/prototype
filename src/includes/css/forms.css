@@ -1,0 +1,95 @@
+
+/*****************************/
+/******** FORM STYLES ********/
+/*****************************/
+
+label{
+	color: #fff;
+}
+input, textarea, button{
+	height: 35px;
+	padding: 5px 8px;
+}
+input, textarea, button{
+	font-family: 'Lato', sans-serif;
+	width: 100%;
+	color: #2d3336;
+	border: 1px solid #99abb6;
+	border-radius: 3px;
+	
+}
+
+input:focus, textarea:focus{
+	/* border: 1px solid #3A3E43; */
+	box-shadow: 0px 0px 7px #888888;
+}
+input[type="submit"], button{
+	font-weight: bold;
+	color: #FFF;
+	background: #428BCA;
+	border: 1px solid #3C86C5;
+	padding: 4px 10px;
+	width: 100%;
+	max-width: 150px;
+	height: 48px;
+}
+input[type="submit"]:hover, button:hover{
+	cursor: pointer;
+	background: #347DBC;
+	box-shadow: 0px 0px 7px #888888;
+}
+input[type="submit"]:disabled{
+	background: #DDD;
+	color: #AAA;
+	border-color: #AAA;
+}
+input[type="submit"]:disabled:hover{
+	cursor: not-allowed;
+	background: #DDD;
+	box-shadow: none;
+}
+textarea{
+	resize  : none;
+	overflow: auto;
+	height: 70px;
+}
+
+/***** Contain forms *****/
+.form-wrap{
+	width:100%;
+	max-width: 650px;
+	margin: 0 auto;
+	padding: 10px;
+}
+.form-wrap-border{
+	border: 1px solid white;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px #888888;
+}
+
+
+
+/******** LOGIN FORM **********/
+
+.login-form-label{
+	
+}
+.login-form-wrap{
+	width:100%;
+	max-width: 250px;
+	margin: 0 auto;
+	padding: 10px;
+}
+.login-form-wrap input[type="submit"]{
+	width: 80px;
+}
+
+
+
+/********** REG FORM **********/
+
+.reg-form-label{ text-align: right; }
+
+@media screen and (max-width: 580px) {
+	.reg-form-label{ text-align: left; }
+}

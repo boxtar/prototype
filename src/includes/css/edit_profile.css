@@ -1,0 +1,14 @@
+.collapsable-panel-toggler{
+	min-height: 50px;
+	background-color: rgba(0,0,0,0.3);
+	padding: 1em 0;
+	cursor: pointer;
+	padding-left:10px;
+}
+.collapsable-panel-toggler:hover{
+	background-color: rgba(0,0,0,0.4);
+}
+.collapsable-panel{
+	/* display:none; Done in JS */
+	background-color: rgba(0,0,0,0.1);
+}

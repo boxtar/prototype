@@ -1,0 +1,109 @@
+html, body{
+	font-family: 'Lato', sans-serif;
+}
+body{
+	padding: 0;
+	margin: 0;
+	background-color: #D5C3C3;
+	color: #FFF;
+}
+*{box-sizing: border-box;}
+h1{font-size: 5em;letter-spacing: 2px}
+h2{font-size: 4em;letter-spacing: 2px}
+h3{font-size: 3em;letter-spacing: 2px}
+h4{font-size: 2em;letter-spacing: 2px}
+h5{font-size: 1.5em;letter-spacing: 2px}
+p{font-size: 1.2em;letter-spacing: 2px}
+a{
+	color: #4f5355;
+	text-decoration: none;
+}
+a:hover{
+	/* text-shadow: 0px 0px 7px #888888; */
+	color: #F0F0E1;
+}
+img{
+	width:100%;
+	height:auto;
+}
+
+/*** General Styles ***/
+
+.boxtar-container{
+	width:100%;
+	z-index: 1;
+}
+.boxtar-content{
+	width:100%;
+	max-width: 1020px;
+	margin: 0 auto; 
+}
+.boxtar-section{
+	padding: 5px 10px;
+	margin-top: 5%;
+/* 	border-bottom: 1px solid #fff; */
+}
+.boxtar-section:first-child{margin-top: 0;}
+
+.main-title{
+	font-size:7.5em;
+	font-weight: 700;
+}
+.brand-img{
+	width: 150px;
+	height: auto;
+}
+@media screen and (max-width: 720px) {
+	.main-title{
+		font-size:5em;
+	}
+}
+@media screen and (max-width: 460px) {
+	.main-title{
+		font-size:3.5em;
+	}
+}
+
+
+/*** Home page styles ***/
+.homepage-banner{
+	text-align: center;
+	padding-bottom: 50px;
+	background-color: transparent;
+	color: #FFF;
+}
+#boxtar-about{
+	width: 100%;
+	max-width: 450px;
+	margin: 0 auto
+}
+
+@media screen and (max-width: 460px) {
+	/* Hides "The platform of talent discovery" on small screens */
+	.homepage-banner h4{
+		display: none;
+	}
+}
+
+
+/**************************************/
+/*********** PROFILE STYLES ***********/
+/**************************************/
+
+.user-profile-img{
+	max-width:250px;
+	/* height: auto; */
+	border: 2px solid #E3E3E3;
+	border-radius: 5px;
+	box-shadow: 7px 7px 5px #888888;
+}
+
+.page-header{
+	padding-bottom: 30px;
+	font-size:4.5em;
+	font-weight: 700;
+	/* border-bottom: 1px solid white; */
+}
+
+
+
